@@ -1,0 +1,38 @@
+.nav {
+  &__list {
+    width: 175px;
+    margin: 20px 50px 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-link {
+      font-size: 14px;
+      color: var(--light-black);
+      text-decoration: transparent;
+      transition: var(--average-transition);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__list-img {
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    fill: var(--dark-grey);
+    border-radius: 50%;
+    transition: var(--fast-transition);
+
+    &:hover {
+      background: var(--light-grey);
+    }
+
+    &:active {
+      background: var(--border--light-grey);
+    }
+  }
+}
